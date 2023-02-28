@@ -2,7 +2,7 @@
 title: "Beer_Tasting_21"
 output: html_document
 ---
-
+## THIS IS MY NEW FILE 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 setwd(".")
@@ -25,7 +25,6 @@ library(tidyverse)
 library(cowplot)
 library(RColorBrewer)
 library(tm); library(SnowballC); library(wordcloud); library(RCurl); library(XML)
-beers <- read_excel("C:/Users/ssmithtr/Desktop/Sync/Beer_Tasting_Retreat_21.xlsx")
 beers <- read_excel("Beer_Tasting_Retreat_21.xlsx")
 type_count <- beers %>% count(Type)
 
